@@ -1,0 +1,23 @@
+        .navbtn {
+            width: 12rem;
+            height: 9rem;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .navbtn {
+                background-color: yellow;
+            }
+        }
+        
+        @media only screen and (min-width: 481px) {
+            .navbtn {
+                background-color: blue;
+                box-shadow: none;
+            }
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            .navbtn {
+                background-color: red;
+            }
+        }
