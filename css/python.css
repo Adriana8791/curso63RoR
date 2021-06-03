@@ -102,3 +102,59 @@ header {
     margin: 10px 10px 10px 10px;
     display: inline-block;
 }
+
+#main {
+    vertical-align: top;
+    float: left;
+    background: bisque;
+    padding: 25px;
+    width: 970px;
+    height: 400px;
+}
+
+#arti1 {
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+}
+
+#arti2 {
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+}
+
+.article ul {
+    color: #000;
+}
+
+.articles h3 {
+    color: black;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.articles p {
+    color: black;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+}
+
+.articles li {
+    color: rgb(83, 221, 245);
+}
+
+#footer h6 {
+    background: rgb(25, 71, 141);
+    color: darkgrey;
+    clear: both;
+    text-align: center;
+    width: 970px;
+    height: 35px;
+    display: inline-block;
+}
