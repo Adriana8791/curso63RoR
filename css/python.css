@@ -1,121 +1,104 @@
-                * {
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        h3 {
-            color: black;
-            text-align: center;
-        }
-        
-        h4 {
-            color: rgb(248, 240, 248);
-        }
-        
-        p {
-            color: rgb(14, 181, 236);
-        }
-        
-        #contenedor {
-            background-color: whitesmoke;
-            width: 970px;
-            height: auto;
-            padding: 10px;
-        }
-        
-        #central {
-            background-color: rgb(25, 71, 141);
-            width: 970px;
-            height: 450px;
-            padding: 10px;
-        }
-        
-        #logo {
-            width: 100px;
-            height: 60px;
-            border: 5px;
-            display: inline-block;
-            margin-right: 10px;
-            padding-left: 10px;
-        }
-        
-        #buscador {
-            height: 100px;
-            width: 300px;
-            margin-left: 10px;
-            border: 2px solid rgb(24, 24, 22);
-            display: inline-block;
-            box-shadow: 6px 20px 10px black;
-            border-radius: 10px;
-            margin-right: 10px;
-        }
-        
-        #lista {
-            background-color: (107, 138, 184);
-            width: 800px;
-            height: 35px;
-            margin-bottom: 20px;
-            padding: 10px;
-            margin-left: 20px;
-            border-radius: 7px;
-            box-shadow: 7px 10px 15px black;
-        }
-        
-        li {
-            color: white;
-        }
-        
-        #lista1 {
-            font-family: Arial;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        .separador {
-            color: gray;
-        }
-        
-        #lista1 li {
-            display: inline;
-            padding-left: 35px;
-            padding-right: 3px;
-        }
-        
-        a {
-            color: rgba(255, 255, 255, 0.952);
-            text-decoration: none;
-        }
-        
-        #lista2 {
-            background-color: rgb(27, 77, 153);
-            width: 130px;
-            min-height: 100px;
-            margin-bottom: 20px;
-            padding: 22px;
-            vertical-align: top;
-            display: inline-block;
-            margin-left: 110px;
-            text-align: center;
-        }
-        
-        #parrafos {
-            background-color: white;
-            display: inline-block;
-            width: auto;
-            padding: 970px;
-            text-align: center;
-            display: block;
-            #lista3,
-            #lista4 {
-                height: 10pxpx;
-                width: 10px;
-                border-bottom: 5px;
-                display: inline-block;
-                padding-bottom: 10px;
-            }
-            #fotter {
-                color: rgb(110, 110, 226);
-                width: 970px;
-                height: 200px;
-                margin: 10px;
-                padding: 10px;
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#contenedor {
+    background: azure;
+}
+
+header {
+    background: rgb(25, 71, 141);
+    width: 970px;
+    margin: auto;
+}
+
+.logotipo {
+    height: 50px;
+    width: 150px;
+}
+
+.img {
+    vertical-align: top;
+}
+
+#size {
+    color: darkgoldenrod;
+    height: 30px;
+    width: 230px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 245px;
+}
+
+#button {
+    background: rgb(63, 59, 59);
+    color: black;
+    height: 40px;
+    width: 230px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid rgb(24, 24, 22);
+    display: inline-block;
+    box-shadow: 4px 9px 10px black;
+    margin: 3px -245px -8px -244px;
+    vertical-align: 5px;
+    border-radius: 7px;
+}
+
+#lista ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #415bb3;
+    box-shadow: 4px 7px 10px black;
+    border-radius: 15px;
+    font-family: Helvetica;
+    width: 880px;
+    height: 40px;
+    margin: 20px 20px 20px 20px;
+}
+
+#lista li {
+    float: left;
+}
+
+#lista li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+
+#lista li a:hover {
+    background-color: #3163af;
+}
+
+.lista2 {
+    display: inline-block;
+}
+
+.lista2 ul {
+    text-align: center;
+    color: whitesmoke;
+    list-style-type: none;
+    margin-left: 155px;
+    vertical-align: top;
+}
+
+#parrafos {
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+#parf {
+    color: yellowgreen;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+}
