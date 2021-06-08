@@ -1,10 +1,5 @@
 /*CSS reset settings here*/
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
     width: 970px;
     background-color: whitesmoke;
