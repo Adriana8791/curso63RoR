@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>3scooljquery</title>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#test").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".test").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <h2>This is a heading</h2>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button> Click me to hide paragraphs </button>
+
+    </head>
+
+    <body>
+
+        <h2>This is a heading</h2>
+
+        <p>This is a paragraph.</p>
+        <p id="test">This is another paragraph.</p>
+
+        <button>Click me</button>
+    </body>
+    <script>
+    </script>
+
+    <body>
+
+
+        <h2 class="test">This is a heading</h2>
+
+        <p class="test">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        <button>Click me</button>
+        <script>
+            // $ ("p: first")                Selecciona el primer elemento <p>
+            // $ ("ul li: first")            Selecciona el primer elemento <li> del primer <ul>
+            // $ ("ul li: first-child")      Selecciona el primer <li> elemento de cada <ul>
+            // $ ("[href]")                  Selecciona todos los elementos con un atributo href
+            // $ ("a [target = '_ blank']")  Selecciona todos los elementos <a> con un valor de atributo de destino igual a                                "_blank"
+            // $ ("a [target! = '_ blank']") Selecciona todos los elementos <a> con un valor de atributo de destino NO igual                            a "_blank"
+            // $ (": button")                Selecciona todos los elementos <button> y <input> de type = "button"
+            // $ ("tr: even")                Selecciona todos los elementos pares <tr>
+            // $ ("tr: odd")                 Selecciona todos los elementos <tr> impares
+
+            //$("*")  Selects all elements
+
+            /*$(document).ready(function(){
+  $("button").click(function(){
+    $("*").hide();
+  });
+});*/
+            // $ (this)                      Selecciona el elemento HTML actual
+            /*
+            $(document).ready(function(){
+              $("button").click(function(){
+                $(this).hide();
+              });
+            });*/
+
+            //$("p.intro ")                  Selecciona todos los elementos <p> con class =" intro "
+            /*$(document).ready(function(){
+  $("button").click(function(){
+    $("p.intro").hide();
+  });
+});*/
+
+
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("a[target='_blank']").hide();
+                });
+            });
+        </script>
+        </head>
+
+        <body>
+
+            <h2>This is a heading</h2>
+
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <p><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p>
+            <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+            <button>Click me</button>
+
+        </body>
+        </script>
+
+
+
+        </script>
+
+        </script>
+
+
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("input").focus(function() {
+                    $(this).css("background-color", "yellow");
+                });
+                $("input").blur(function() {
+                    $(this).css("background-color", "green");
+                });
+            });
+        </script>
+        </script>
+        </head>
+
+        <body>
+
+            Name: <input type="text" name="fullname"><br> Email: <input type="text" name="email">
+
+        </body>
+
+    </body>
+    <script>
+        < html >
+            <
+            head >
+            <
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            //adjunta un "click event listener" a todas las etiquetas img cuando el documento esté listo
+            $('img').click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+    </head>
+
+    <body>
+        <img src="imagenes/lupa.jpg" />
+        <img src="imagenes/lupa.jpg" />
+        <img src="imagenes/lupa.jpg" />
+        <img src="imagenes/lupa.jpg" />
+        <img src="imagenes/lupa.jpg" />
+    </body>
+
+    </script>
+</body>
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

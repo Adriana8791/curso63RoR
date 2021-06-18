@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejerciciosDeAlgoriymosCore2</title>
+    <script>
+        function a() { //llamado a la funcion
+            console.log('hello');
+        } //termina y no hay retorno
+        console.log('Dojo'); //imprime 
+        //respuesta: Dojo
+
+        function a() { //llamado a la funcion
+            console.log('hello'); //imprime
+            return 15; //retorno
+        }
+        x = a(); //sobre escritura
+        console.log('x is', x); //imprime
+        //respuesta hello,x is  15
+
+        function a(n) { //sobre escritura //a(3)
+            console.log('n is', n); //("n is",3)
+            return n + 15; //3+15=18
+        }
+        x = a(3); //sobre escritura
+        console.log('x is', x); //imprime
+        //resp: n is 3" , x is 18
+
+        function op(a, b) { //op (a es 2,3)(b es 3,5)
+            c = a + b; //a 5,8
+
+            console.log('c is', c);
+            5, 8
+            return c;
+        }
+        x = op(2, 3) + op(3, 5);
+        console.log('x is', x);
+        //resp:c is 5,8, "x is 13"
+
+        function op(a, b) { //llamado a la funcion op  a11,b8
+            c = a + b; //19
+            console.log('c is', c); // c is 19
+            return c;
+        }
+        x = op(2, 3) + op(3, op(2, 1)) + op(op(2, 1), op(2, 3)); //sobre escritura
+        console.log('x is', x) //x is 19
+            //resp:c is 5, c is 3,c is 6, c is 3, c is 5, c is 8 , x is 19
+
+        var x = 15; // datos x=15
+        function a() { // llamado a la funcion
+            var x = 10;
+        }
+        //termina aqui
+        console.log(x); //imprimo 15
+        a(); //sobre escritura ( )
+        console.log(x); // imprimo 15
+        //res:15,15
+        5
+
+        function multiply(x, y) { //llamado a la funcion multiply (2,3)
+            console.log(x); //2
+            console.log(y); //3
+        } //termina aqui
+        b = multiply(2, 3); //sobre escritura
+        console.log(b); // imprimo (2,3)
+        //resp: 2,3
+
+        function multiply(x, y) { // llamado a la funcion multiply es (x=2,y=3) ///nuevo retorno (x=5,y=2)
+            return x * y; // retorna x=2 * y=3 = 6 /// nuevo retorno  x=5 *y=2
+        }
+        b = multiply(2, 3); //sobre escritura 
+        console.log(b); //imprimo 6
+        console.log(multiply(5, 2)); //imprimo 10
+        //resp:6, 10
+
+        var x = [1, 2, 3, 4, 5, 10]; //arreglo no lo considero
+        for (var i = 0; i < 5; i++) { // 3 ,4, undefined
+            i = i + 3; // 
+            console.log(i); //imprimo 3,7
+        }
+        //resp :3,7
+
+        var x = 15;
+        console.log(x);
+        15
+
+        function awesome() { //llamado a la funcion      &&& preguntar =
+            var x = 10; //sobre escritura 
+            console.log(x); //10
+        }
+        console.log(x);
+        15
+        awesome();
+        console.log(x);
+        15
+        //resp: 15,15,10,15
+
+        for (var i = 0; i < 15; i += 2) { // 0,2,4,6,8,10,12,14 
+            console.log(i);
+        }
+        //resp: 0,2,4,6,8,10,12,14
+
+
+        for (var i = 0; i < 3; i++) { //0,1,2,3  ///no me da preguntar  
+
+
+            for (var j = 0; j < 2; j++) { //0,1,2
+
+                console.log(i * j);
+            }
+        }
+        //resp:0,1,2,3 * 0,1,2,3
+        //0, 2, 4, 6, 8,10, 12, 14,   0, 1, 0, 2
+
+        function looping(x, y) { //llamado a la funcion looping (x3,y3)
+            for (var i = 0; i < x; i++) { //0,1,2,                           &&&& preguntar
+
+                for (var j = 0; j < x; j++) { //0,1,2,3
+                    console.log(i * j); //0,1,4,9
+                }
+            }
+        }
+        z = looping(3, 3); //sobre escritura
+        console.log(z); //6
+        //resp=0,1,4,9,6
+
+        function looping(x, y) { //llamado a la funcion (3,5)
+            {
+                for (var i = 0; i < x; i++) //x3///0,1,2,3
+                    for (var j = 0; j < y; j++) { //y5 ///0,1,2,3,4,5
+                    console.log(i * j); //15
+                }
+            }
+            return x * y; //retorno 15
+        }
+        z = looping(3, 5);
+        console.log(z);
+        15
+        //resp:0,1,2,3,0,1,2,3,4,5,15
+
+
+        function printUpTo(x) {
+            // your code here
+        }
+        printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+        y = printUpTo(-10); // debería imprimir false
+        console.log(y); // debería imprimir false
+
+
+        for (var counter = 0; counter <= 1000; counter++) {
+
+            var notPrime = false;
+            for (var i = 2; i <= counter; i++) {
+                if (counter % i === 0 && i !== counter) {
+                    notPrime = true;
+                }
+            }
+            if (notPrime === false) {
+                console.log(counter);
+            }
+        }
+
+
+
+
+
+
+        function printSumArray(x) {
+            var sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                //your code here
+            }
+            return sum;
+        }
+        console.log(printSumArray([1, 2, 3])); // debería imprimir 6
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
