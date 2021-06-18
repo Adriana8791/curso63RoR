@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copiandocodinjquery</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+        console.log($) // $ con el signo dolar o peso accedemos a toda la librería jQuery.
+        console.log($()) //Con $() seleccionamos una etiqueta HTML
+        $('body').click(function() { //Si quisiéramos seleccionar la etiqueta,
+            //tendríamos que escribir $('body'). Este selector puede tomar cualquier etiqueta de HTML.
+            // acá irá más código 
+        });
+        $(document).ready(function() { //Dentro de las llaves {} de la función de
+            // más arriba, es donde debes insertar todas las funciones de jQuery
+        });
+        $('button') // para seleccionar todos los botones (buttons) de la página web, se escribe asi
+        $('button.blue') //selecciona todos los botones con el nombre de clase blue? ¡Lo mismo que en CSS!:
+        $('button, .blue') //si  seleccionamos todos los botones y elementos con la clase blue
+        $('#red') //Y si quiero seleccionar un HTML con un ID, así es como se hace
+        $('button').click(); //**¡ahora el documento está "escuchando" (listening) un evento 
+        //clic para el elemento button (botón)!**
+        //.append() y .html() hacen casi la misma cosa; ambos pueden alterar el contenido de HTML en el ítem
+        //Ten en cuenta que para la manipulación de funciones de jQuery, hay algunas distinciones que hacer. Las funciones .html() y .text() son diferentes en un sentido clave: .html() puede ser utilizado para insertar nuevo marcado de HTML, es decir nuevas etiquetas de HTML. .text() es usado para obtener o configurar el valor de texto de un elemento de HTML. Por ejemplo, podrías utilizar .text() para cambiar el texto de un párrafo, pero si quieres poner una lista ordenada dentro del párrafo, tienes que usar .html() para insertar las etiquetas apropiados dentro de párrafo. 
+        $('button').click(function() {
+            alert("#¡Haz cliqueado un botón!");
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#myParagraph').text();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var myText = $('#myParagraph').text();
+            alert(myText);
+        })
+    </script>
+
+    <body>
+        <p id='myParagraph'> ¡Este es mi párrafo! </p>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('#myParagraph').text('mira como I .text() funciona como setter!');
+            })
+        })
+    </script>
+
+    <body>
+        <p id='myParagraph'> ¡Este es mi párrafo! </p>
+        <button> ¡Cliquéame para cambiar el párrafo! </button>
+    </body>
+
+
+
+</head>
+
+
+
+</html>

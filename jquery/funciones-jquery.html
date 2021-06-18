@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>funciones_jquery</title>
+    <script>
+        $(document).ready(function() {
+            //función click
+            $('#boton1').click(function() {
+                $('#parrafo1').text("click realizado en el botón"); //text(): cambia texto o captura el texto del elemento
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide(2000); //oculta el elemento
+            });
+            //show
+            $('#boton3').click(function() {
+                $('#parrafo2').show(); //muestrar
+            });
+            //toggle
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle(); //alterna o convina
+            });
+            //slide up
+            $(document).ready(function() {
+                $(".btn1").click(function() {
+                    $("p").slideUp(2000); //puedo agregar velocidad
+                    alert("The slideUp() method is finished!"); //crea una alerta 
+                });
+            });
+            $(".btn2").click(function() {
+                $("p").slideDown(2000);
+            });
+        });
+
+        $(document).ready(function() { //une 
+            $("button").click(function() {
+                $("p").slideToggle();
+            });
+        });
+
+        $(document).ready(function() {
+            $(".btn1").click(function() {
+                $("h1").fadeOut(3000);
+            });
+            $(".btn2").click(function() {
+                $("h1").fadeIn(3000);
+            });
+        });
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p:first").addClass("intro");
+            });
+        });
+
+        function beforeText() {
+            var txt1 = "<b>I </b>"; // Crea elemento 
+            var txt2 = $("<i></i>").text("love ");
+            var txt3 = document.createElement("b");
+            $("img").before(txt1, txt2, txt3); // Inserta nurvos elementos despues img
+        }
+
+        function afterText() {
+            var txt1 = "<b>I </b>";
+            var txt2 = $("<i></i>").text("love ");
+            var txt3 = document.createElement("b");
+            txt3.innerHTML = "jQuery!";
+            $("img").after(txt1, txt2, txt3);
+        }
+
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("p").append(" <b>Appended text</b>.");
+            });
+            $("#btn2").click(function() {
+                $("ol").append("<li>Appended item</li>");
+            });
+        });
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").html("Hello <b>world!</b>");
+            });
+        });
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("img").attr({
+                    width: "150",
+                    height: "100"
+                });
+            });
+        });
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("input:text").val("Adriana Cardenas");
+            });
+        });
+    </script>
+    </script>
+    </script>
+    </script>
+    </script>
+</head>
+</script>
+</head>
+//fin jquery
+</script>
+</head>
+<style>
+    .intro {
+        font-size: 150%;
+        color: red;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Función Click y Text</h1>
+        <p id="parrafo1">clik en el botón para llamar al evento click</p>
+        <button id="boton1">Click</button>
+        <hr>
+        <h1>Función Hide, Show y Toggle</h1>
+        <p id="parrafo2">clik en el botón para ocultar el parrafo</p>
+        <button id="boton2">Hide</button>
+        <button id="boton3">Show</button>
+        <button id="boton4">Toggle</button>
+        <hr>
+
+
+        <button class="btn1">Slide up</button>
+        <button class="btn2">Slide down</button>
+
+        <hr>
+
+        <button>Toggle slideUp() and slideDown()</button>
+
+        <hr>
+
+        <button class="btn1">Fade out</button>
+        <button class="btn2">Fade in</button>
+        <h1>Se desvanece</h1>
+
+        <hr>
+
+
+        <button>Add a class name to the first p element</button>
+        <hr>
+
+        <img src="imagenes/lupa.jpg" alt=j Query width="100" height="100">
+
+        <p>Click the button to insert text before the image.</p>
+        <button onclick="beforeText()">Insert after</button>
+        <hr>
+
+        <img src="imagenes/lupa.jpg" alt=j Query width="100" height="100">
+        <p>Click the button to insert text before the image.</p>
+
+        <button onclick="afterText()">Insert after</button>
+
+        <hr>
+
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+
+        <button id="btn1">Append text</button>
+        <button id="btn2">Append list item</button>
+
+        <hr>
+
+        <button>Change content of all p elements</button>
+
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <hr>
+
+        <img src="imagenes/lupa.jpg" alt="lupa" width="284" height="213"><br>
+
+        <button>Set width and height attributes of the image</button>
+
+        <hr>
+
+        <ps>Name: <input type="text" name="user"></ps>
+
+        <button>Set the value of the input field</button>
+
+
+</body>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+</body>
+</script>
+
+<body>
+
+    </div>
+</body>
+
+</html>
