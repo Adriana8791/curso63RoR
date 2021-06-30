@@ -1,0 +1,32 @@
+.modal-contenido {
+    background-color: rgb(132, 0, 255);
+    width: 200px;
+    padding: 10px 20px;
+    margin: 8% auto;
+    position: relative;
+    border-radius: 10%;
+    border-color: black;
+}
+
+.modal {
+    background-color: rgba(243, 187, 187, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+#miModal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.miModaltarget {
+    opacity: 1;
+    pointer-events: auto;
+}

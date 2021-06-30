@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="el tiempo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>eltiempo</title>
+    <script>
+        $(document).ready(function() {
+            //mostrar las imagenes en el html
+            //for (let i = 1; i <= 898; i++) {
+            //$('#container').append('<img id="' + i + '" src="https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=6cc0dff7522d6a11d223b7926047bb34' + i + '.png">');
+            //}
+            //$('img').click(function() {
+            //var id = $(this).attr('id'); //captura el valor del id, de la imagen clickeada//
+            //consumo de api
+            $.get("htpp://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&APPID=6cc0dff7522d6a11d223b7926047bb34" + id + "/", function(respuesta) {
+                console.dir(respuesta);
+                console.log(respuesta.name);
+                //console.log(respuesta.sprites.front_default);
+                //mostrar el modal,a traves de css
+                //$('#miModal').addClass('miModaltarget');
+
+                //llenar el modal con la informacion del pokemon
+                //respuesta.name; respuesta.sprites.front_default;respuesta.types[0].type.name;respuesta.height;respuesta.weight
+
+                /* 
+                <h2>Mi primer Modal</h2>
+                <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>*/
+                var celcius = Math.round(respuesta.main.temp - 273, 15)
+                $("#respuesta").html('<h3>ciudad:' + respuesta.name + '</h3>');
+                $('#respuesta').append('<p>cordenadas longitud:' + respuesta.coord.lon + '</p>');
+                $('#respuesta').append('<p>cordenadas.latitud:' + respuesta.coord.lat + '</p>');
+                $('#respuesta').append('<p>temperatura celcius :' + celcius + '</p>');
+                //$('.modalContenido').append(' respuesta.coord.type.name + '</p>');
+                //$('.modalContenido').append('<p><b>Altura:</b> ' + respuesta.height + '</p>');
+                //$('.modalContenido').append('<p><b>Gordura:</b> ' + respuesta.weight + '</p>');
+                //$(".modalcontenido").click(function(respuesta) {
+                //$("miModaltarget").fadeOut(5000);
+                //});
+                //$(".modalcontenido").click(function(respuesta) {
+                //$("miModaltarget").slideDown(3000);
+            });
+            $('button').click(function() {
+                var ciudad = $("#name").val(); //capturando el valor del imput
+                console.log(ciudad);
+            });
+        }, "json");
+
+        //});
+
+        //capturamos el click en el elemento
+
+
+        //quitar una clase .removeClass()
+        //$('#miModal').removeClass('miModaltarget');
+
+        //});
+        //});
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="respuesta">
+
+
+            <h2>el tiempo</h2>
+            <p>Como esta el clima en </p>
+            <label for="name ">Ciudad</label>
+            <input id="name" type="text">
+            <button>enviar</button>
+        </div>
+</body>
+
+</html>
